@@ -1,0 +1,9 @@
+/* 반응형 css header*/
+@media screen and (min-width:1300px){
+    .m_nav {display:none !important;}
+    .m_mav_open {display:none !important;}
+}
+@media screen and (max-width:1300px){
+    nav #gnb {display:none !important;}
+    nav .m_nav {display:block;}
+}

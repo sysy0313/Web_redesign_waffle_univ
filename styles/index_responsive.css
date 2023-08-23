@@ -1,0 +1,205 @@
+/* index-반응형 */
+body {min-width:320px;}
+@media screen and (max-width:1850px){
+    /* nesw - store */
+    main #news .right .tab_contents .store a {width:370px; height:370px;}
+}/* 1850 end */
+@media screen and (max-width:1700px){
+    /* nesw - store */
+    main #news .right .tab_contents .store a {width:320px; height:320px;}
+}/* 1850 end */
+@media screen and (max-width:1600px){
+    /* --------------visual-------------- */
+    main #visual #visual_slide .swiper-wrapper .swiper-slide .left h2 {margin-bottom:30px;}
+    main #visual #visual_slide .swiper-wrapper .swiper-slide .left h2 em {font-size:5.5rem; margin-bottom:10px;}
+    main #visual #visual_slide .swiper-wrapper .swiper-slide .left h2 span {font-size:4rem;}
+    main #visual #visual_slide .swiper-wrapper .swiper-slide .left h2 span:nth-of-type(1) {margin-bottom:10px;}
+    main #visual #visual_slide .swiper-wrapper .swiper-slide .left p img {margin-right:10px;}
+    main #visual #visual_slide .swiper-wrapper .swiper-slide .left p span {font-size:1rem;}
+    /* -------------best_menu------------ */
+    main #best_menu #best_slide .swiper-wrapper .swiper-slide .item a img {width:300px; height:300px;}
+    main #best_menu #best_slide .swiper-wrapper .swiper-slide .item .info h3 a {
+        font-size:1.5rem; 
+    }
+}/* 1600 end */
+@media screen and (max-width:1500px){
+    main #best_menu #best_slide .swiper-wrapper .swiper-slide .item {}
+    main #best_menu #best_slide .swiper-wrapper .swiper-slide .item:first-child {}
+    main #best_menu #best_slide .swiper-wrapper .swiper-slide .item a img {width:250px; height:250px;}
+    main #best_menu #best_slide .swiper-wrapper .swiper-slide .item .info h3 a {
+        font-size:1.25rem; 
+    }
+    main #best_menu #best_slide .swiper-wrapper .swiper-slide .item .info p {
+        font-size:1rem; line-height:30px;
+    }
+    /* ------------------news---------------- */
+    main #news .left p img {width:90%;}
+    /* nesw - store */
+    main #news .right .tab_contents .store a {width:280px; height:280px;}
+}/* 1500 end */
+@media screen and (max-width:1300px) {
+    /* nesw - store */
+    main #news .right .tab_contents .store a {width:250px; height:250px;}
+    main #news .right .tab_contents .store a span { font-size:1.5rem;}
+}/* 1300 end */
+@media screen and (max-width:1200px) {
+    /* --------------visual-------------- */
+    main #visual #visual_slide .swiper-wrapper .swiper-slide .left {
+        padding-left:30px;
+    }
+    /*---------------- best_menu-------------------- */
+    main #best_menu #best_slide .swiper-wrapper .swiper-slide .item:first-child {margin-right:0;}
+    /* ------------------news---------------- */
+    main #news .left p {left:-30px; bottom:30px;}
+    main #news .left p img {width:80%;}
+    /* nesw - store */
+    main #news .right .tab_contents .store a {width:220px; height:220px;}
+    main #news .right .tab_contents .store a span { font-size:1.25rem;}
+    /*---------- sns---------- */
+    main #sns .top a {
+        width:300px; height:60px; border-radius:50px;
+    }
+    main #sns .top a span {font-size:1.5rem;}
+}/* 1200 end */
+@media screen and (max-width:1110px) {
+    /* --------------visual-------------- */
+    main #visual #visual_slide .swiper-wrapper .swiper-slide {
+        width:100%;
+        display:flex; flex-flow:column nowrap;
+    }
+    main #visual #visual_slide .swiper-wrapper .swiper-slide .left {width:100%; height:400px;}
+    main #visual #visual_slide .swiper-wrapper .swiper-slide .right {width:100%; height:400px;}
+    main #visual #visual_slide .swiper-wrapper .swiper-slide .left h2 {margin-bottom:10px;}
+    main #visual #visual_slide .swiper-wrapper .swiper-slide .left h2 em {font-size:4.5rem; margin-bottom:0;}
+    main #visual #visual_slide .swiper-wrapper .swiper-slide .left h2 span {font-size:3rem; margin-bottom:10px;}
+    main #visual #visual_slide .swiper-wrapper .swiper-slide .left h2 span:nth-of-type(1) {margin-bottom:5px;}
+    /*-------------- best menu--------- */
+    main #best_menu {padding:100px 15px;}
+    main #best_menu #best_slide .swiper-wrapper .swiper-slide .item {width:90%; margin-bottom:20px;}
+    main #best_menu #best_slide .swiper-wrapper .swiper-slide .item a img {width:300px; height:300px;}
+    main #best_menu #best_slide .swiper-wrapper .swiper-slide .item .info h3 a {font-size:1.563rem;}
+    main #best_menu #best_slide .swiper-wrapper .swiper-slide .item .info p {font-size:1.25rem; line-height:40px;}
+    /* -------------news------------------ */
+    main #news .left h2 {font-size:5rem;}
+    main #news .right .tab_top .tab_title .tab_btn {width:150px; height:50px;}
+    main #news .right .tab_top .tab_title .tab_btn a {font-size:1.5rem; line-height:50px;} 
+    main #news .right .tab_contents .notice ul {padding:15px;}
+    main #news .right .tab_contents .notice ul li a h3 {
+        font-size:1.5rem; margin-bottom:15px;
+    }
+    main #news .right .tab_top .more span {font-size:1.5rem;}
+    main #news .left p img {width:70%;}
+    /* -----------sns--------------- */
+    main #sns .top h2 {font-size:5rem;}
+}/* 1110 end */
+@media screen and (max-width:900px){
+    /* -----------bnr----------------- */
+    main #bnr .with_bnr {padding:30px 15px; height:200px;}
+    main #bnr .with_bnr h2 {font-size:1.5rem; margin-bottom:15px;}
+    main #bnr .with_bnr p {font-size:1.25rem; line-height:30px; margin-bottom:10px;}
+    main #bnr .with_bnr a {padding:10px 20px; font-size:1.25rem;}
+    main #bnr .search_bnr {height:200px; padding:30px 15px;
+    }
+    main #bnr .search_bnr h2 {font-size:1.5rem; margin-bottom:15px;}
+    main #bnr .search_bnr p {font-size:1.25rem; line-height:30px; margin-bottom:10px;}
+    main #bnr .search_bnr form {}
+    main #bnr .search_bnr fieldset {
+        background:#ffffff; overflow:hidden;
+        width:300px; height:40px; 
+        padding:5px;
+    }
+    main #bnr .search_bnr fieldset #search::placeholder {font-size:1rem;}
+}
+@media screen and (max-width:1050px){
+    /* nesw - store */
+    main #news .right .tab_contents .store a {width:170px; height:170px;}
+}
+@media screen and (max-width:800px){
+    main #best_menu #best_slide .swiper-wrapper .swiper-slide .item a img {width:280px; height:280px;}
+    /* -------------news ------------ */
+    main #news {
+        padding:100px 15px; display:flex; flex-flow:column nowrap; align-items:center;
+    }
+    main #news .right {width:100%;}
+    main #news .left h2 {font-size:4rem; margin-bottom:35px;}
+    main #news .left p {display:none}
+    main #news .left p img {display:none;}
+    main #news .right .tab_contents .notice ul li a h3 {font-size:1.25rem;}
+    main #news .right .tab_contents .notice ul li a p {font-size:1rem;}
+    main #news .right .tab_top .more span {font-size:1.25rem;}
+    /* nesw - store */
+    main #news .right .tab_contents .store a {width:200px; height:200px;}
+    /* -------sns---------- */
+    main #sns .top h2 {font-size:4rem;}
+    main #sns .top a {
+        width:250px; height:40px; border-radius:50px;
+    }
+    main #sns .top a img {width:20px; height:20px;}
+    main #sns .top a span {font-size:1.2rem;}
+}/* 800 end */
+@media screen and (max-width:700px) {
+    main #best_menu #best_slide .swiper-wrapper .swiper-slide .item {width:100%;}
+    main #best_menu #best_slide .swiper-wrapper .swiper-slide .item a img {width:200px; height:200px;}
+    /* nesw - store */
+    main #news .right .tab_contents .store a {width:170px; height:170px;}
+    /* -----------bnr----------------- */
+    main #bnr {
+        padding:0;
+        display:flex; flex-flow:column nowrap;
+    }
+    main #bnr .with_bnr, main #bnr .search_bnr {width:100%;}
+
+}/* 700end */
+@media screen and (max-width:600px) {
+    main #best_menu #best_slide .swiper-wrapper .swiper-slide .item .info h3 a {font-size:1.25rem;}
+    main #best_menu #best_slide .swiper-wrapper .swiper-slide .item .info p {font-size:1rem; line-height:30px;}
+    /* nesw - store */
+    main #news .right .tab_contents .store a {width:150px; height:150px;}
+    main #news .right .tab_contents .store a span { font-size:1rem;}
+}
+@media screen and (max-width:550px){
+    main #news .right .tab_top .tab_title .tab_btn {width:100px; height:40px;}
+    main #news .right .tab_top .tab_title .tab_btn a {font-size:1.25rem; line-height:40px;}
+    main #news .right .tab_top .more span {font-size:1rem;}
+    /* ------------news store------------ */
+    main #news .right .tab_contents .store {
+        flex-flow:column nowrap;}
+    
+}/* 550 end */
+@media screen and (max-width:450px){
+    /* --------------visual-------------- */
+    main #visual #visual_slide .swiper-wrapper .swiper-slide .left {padding-left:15px;}
+    main #visual #visual_slide .swiper-wrapper .swiper-slide .left h2 {margin-bottom:8px;}
+    main #visual #visual_slide .swiper-wrapper .swiper-slide .left h2 em {font-size:4.5rem; margin-bottom:0;}
+    main #visual #visual_slide .swiper-wrapper .swiper-slide .left h2 span {font-size:3rem; margin-bottom:10px;}
+    main #visual #visual_slide .swiper-wrapper .swiper-slide .left h2 span:nth-of-type(1) {margin-bottom:5px;}
+    main #visual #visual_slide .swiper-wrapper .swiper-slide .left p img {margin-right:5px;}
+    main #visual #visual_slide .swiper-wrapper .swiper-slide .left p span {
+    font-size:1rem; letter-spacing:-0.04em; font-weight:400;
+    }
+}/* 450 end  */
+@media screen and (max-width:400px) {
+    main #visual #visual_slide .swiper-wrapper .swiper-slide .left h2 {margin-bottom:50px;}
+    main #visual #visual_slide .swiper-wrapper .swiper-slide p {display:none;}
+    main #news .right .tab_top .more span {display:none;}
+    main #news .right .tab_contents .notice ul li a h3 {font-size:1rem;}
+    main #news .right .tab_contents .notice ul li a p {font-size:0.9rem;}
+}/* 400 end */
+@media screen and (max-width:380px) {
+    /* -----------bnr----------------- */
+    main #bnr .with_bnr {padding:30px 15px; height:200px;}
+    main #bnr .with_bnr h2 {font-size:1.25rem; margin-bottom:10px;}
+    main #bnr .with_bnr p {font-size:1rem; line-height:30px; margin-bottom:10px;}
+    main #bnr .with_bnr a {padding:10px 20px; font-size:1.25rem;}
+    main #bnr .search_bnr {height:200px; padding:30px 15px;
+    }
+    main #bnr .search_bnr h2 {font-size:1.25rem; margin-bottom:10px;}
+    main #bnr .search_bnr p {font-size:1rem; line-height:30px; margin-bottom:10px;}
+    main #bnr .search_bnr form {}
+    main #bnr .search_bnr fieldset {
+        background:#ffffff; overflow:hidden;
+        width:280px; height:40px; 
+        padding:3px;
+    }
+    main #bnr .search_bnr fieldset #search::placeholder {font-size:0.9rem;}
+}/* 380 end */

@@ -1,6 +1,6 @@
 main {}
-/* visual */
-main #visual {}
+/* --------------------------------------visual----------------------------------- */
+main #visual {margin-top:100px}
 main #visual #visual_slide {}
 main #visual #visual_slide .swiper-wrapper {}
 main #visual #visual_slide .swiper-wrapper .swiper-slide {
@@ -10,7 +10,6 @@ main #visual #visual_slide .swiper-wrapper .swiper-slide {
 main #visual #visual_slide .swiper-wrapper .swiper-slide .left {
     width:41.66%; display:flex; flex-flow:column nowrap; justify-content:center;
     padding-left:7%;
-    
 }
 main #visual #visual_slide .swiper-wrapper .slide1 .left {background:#FFF3BE;}
 main #visual #visual_slide .swiper-wrapper .slide2 .left {background:#053291;}
@@ -29,10 +28,7 @@ main #visual #visual_slide .swiper-wrapper .slide1 .left h2 span {color:#053291;
 main #visual #visual_slide .swiper-wrapper .slide2 .left h2 span {color:#ffffff;}
 main #visual #visual_slide .swiper-wrapper .swiper-slide .left p:first-of-type {margin-bottom:24px;}
 main #visual #visual_slide .swiper-wrapper .swiper-slide .left p:nth-of-type(2) {margin-bottom:60px;}
-main #visual #visual_slide .swiper-wrapper .swiper-slide .left p img {margin-right:10px;}
-main #visual #visual_slide .swiper-wrapper .swiper-slide .left p span {
-    font-size:1.25rem; letter-spacing:-0.02em; font-weight:500;
-}
+
 main #visual #visual_slide .swiper-wrapper .slide2 .left p span {color:#ffffff;}
 main #visual #visual_slide .swiper-wrapper .swiper-slide .left a {
     font-family: 'Baloo 2', cursive; font-size:1.25rem; letter-spacing:-0.02em;
@@ -50,10 +46,10 @@ main #visual #visual_slide .swiper-wrapper .swiper-slide .right {
 }
 main #visual #visual_slide .swiper-wrapper .slide1 .right {background-image:url(../images/slide_01.jpg)}
 main #visual #visual_slide .swiper-wrapper .slide2 .right {background-image:url(../images/slide_02.jpg)}
-/* best menu */
+/* -------------------------------------best menu---------------------------------- */
 main #best_menu {
     background:#f5f5f5;
-    padding:100px; position:relative;
+    padding:100px 30px; position:relative;
 }
 main #best_menu h2 {
     font-family: 'Baloo 2', cursive; text-align:center;
@@ -67,74 +63,222 @@ main #best_menu .txt_move {
 }
 main #best_menu .txt1 {top:100px; }
 main #best_menu .txt2 {bottom:100px}
-main #best_menu #best_slide {}
+main #best_menu #best_slide {width:100%;}
 main #best_menu #best_slide .swiper-wrapper {}
 main #best_menu #best_slide .swiper-wrapper .swiper-slide {}
 /* 슬라이드 버튼 */
-main #best_menu #best_slide .swiper-button-prev  {}
-main #best_menu #best_slide .swiper-button-next  {}
+main #best_menu #best_slide .swiper-button-prev  {background:url(../images/nav_prev.png) center;}
+main #best_menu #best_slide .swiper-button-next  {background:url(../images/nav_next.png) center; }
+main #best_menu #best_slide .swiper-button-prev::after {display:none;}
+main #best_menu #best_slide .swiper-button-next::after {display:none;}
 
-main #best_menu #best_slide .swiper-wrapper .swiper-slide .top {
-    display:flex; justify-content:center;
+main #best_menu #best_slide .swiper-wrapper .swiper-slide {
+    display:flex; flex-flow:row wrap; justify-content:center;
 }
-main #best_menu #best_slide .swiper-wrapper .swiper-slide .top .item:first-child {margin-right:50px;}
-main #best_menu #best_slide .swiper-wrapper .swiper-slide div .item {
+main #best_menu #best_slide .swiper-wrapper .swiper-slide .item:first-child {margin-right:50px;}
+main #best_menu #best_slide .swiper-wrapper .swiper-slide .item {
     display:flex; flex-flow:row nowrap; align-items:center;
 }
-main #best_menu #best_slide .swiper-wrapper .swiper-slide div .item > a {
+main #best_menu #best_slide .swiper-wrapper .swiper-slide .item > a {
     margin-right:15px;
 }
-main #best_menu #best_slide .swiper-wrapper .swiper-slide div .item a img {width:350px; height:350px;}
-main #best_menu #best_slide .swiper-wrapper .swiper-slide div .item .info  {}
-main #best_menu #best_slide .swiper-wrapper .swiper-slide div .item .info h3 {}
-main #best_menu #best_slide .swiper-wrapper .swiper-slide div .item .info h3 a {
+main #best_menu #best_slide .swiper-wrapper .swiper-slide .item a img {width:350px; height:350px;}
+main #best_menu #best_slide .swiper-wrapper .swiper-slide .item .info  {}
+main #best_menu #best_slide .swiper-wrapper .swiper-slide .item .info h3 {}
+main #best_menu #best_slide .swiper-wrapper .swiper-slide .item .info h3 a {
     font-size:1.563rem; letter-spacing:-0.02em; margin-bottom:15px;
     font-weight:500; color:#053291; transition:all 0.5s;
 }
-main #best_menu #best_slide .swiper-wrapper .swiper-slide div .item .info h3 a::after {
+main #best_menu #best_slide .swiper-wrapper .swiper-slide .item .info h3 a::after {
     display:block;
     content:''; width:0; height:2px; background:#FDCE02; margin-top:5px; transition:all 0.5s linear;
 }
-main #best_menu #best_slide .swiper-wrapper .swiper-slide div .item .info p {
+main #best_menu #best_slide .swiper-wrapper .swiper-slide .item .info p {
     font-size:1.25rem; letter-spacing:-0.02em; line-height:40px;
 }
-main #best_menu #best_slide .swiper-wrapper .swiper-slide .btm {
-    display:flex; justify-content:center; margin-top:-50px;
+/* hover */
+main #best_menu #best_slide .swiper-wrapper .swiper-slide .item:hover > a {animation:rotate 0.5s linear alternate infinite; }
+main #best_menu #best_slide .swiper-wrapper .swiper-slide .item:hover .info h3 a {color:#FDCE02;}
+main #best_menu #best_slide .swiper-wrapper .swiper-slide .item:hover .info h3 a::after {width:220px;}
+
+/* ----------------------------------------news------------------------------------------- */
+main #news {
+    /* height:750px; */
+    padding:100px 30px; display:flex; flex-flow:row nowrap; justify-content:space-between;
+    position:relative;
+}
+main #news .left {width:30%;}
+main #news .left h2 {
+    font-family: 'Baloo 2', cursive; color:#053291; font-size:6.25rem; letter-spacing:-0.02em;
+}
+main #news .left p {position:absolute; left:-20px; bottom:70px;}
+main #news .left p img {}
+main #news .right {width:70%;}
+main #news .right .tab_top {
+    display:flex; flex-flow:row nowrap; justify-content:space-between; align-items:flex-end;
+    border-bottom:2px solid #FDCE02;
+}
+main #news .right .tab_top .tab_title {display:flex; flex-flow:row nowrap;}
+main #news .right .tab_top .tab_title .tab_btn {background:#efefef; width:200px; height:70px; text-align:center; transition:all 0.5s;}
+main #news .right .tab_top .tab_title .tab_btn:hover {background:#d1d1d1;}
+main #news .right .tab_top .tab_title .tab_btn:hover a {color:#ffffff;}
+main #news .right .tab_top .tab_title .tab_btn a {
+    display:block; width:100%;
+    font-size:1.963rem; letter-spacing:-0.02em; font-weight:500; line-height:70px; 
+}
+main #news .right .tab_top .tab_title .active {background:#FDCE02}
+main #news .right .tab_top .tab_title .active a {color:#ffffff;}
+main #news .right .tab_top .more {display:flex; flex-flow:row nowrap; align-items:center; margin-bottom:10px;}
+main #news .right .tab_top .more img {}
+main #news .right .tab_top .more span {
+    font-family: 'Baloo 2', cursive; color:#053291; font-size:1.938rem;
+}
+main #news .right .tab_contents {}
+main #news .right .tab_contents .notice {
+    background:white;
+}
+main #news .right .tab_contents .notice ul {
+    width:100%;
+    padding:15px 40px 40px;}
+main #news .right .tab_contents .notice ul li {
+    border-bottom:1px dashed #FDCE02; padding:20px 0;
+}
+main #news .right .tab_contents .notice ul li:last-child {border-bottom:none;}
+main #news .right .tab_contents .notice ul li a {}
+main #news .right .tab_contents .notice ul li a h3 {
+    font-size:1.938rem; letter-spacing:-0.04em; font-weight:500; margin-bottom:20px;
+    white-space:nowrap; overflow:hidden; text-overflow:ellipsis;
+}
+main #news .right .tab_contents .notice ul li a p {
+    font-size:1.25rem; letter-spacing:-0.04rem; font-weight:500; color:#d1d1d1;
+}
+main #news .right .tab_contents .store {
+    margin-top:70px; justify-content:space-around;
+}
+main #news .right .tab_contents .store a {
+    width:400px; height:400px;
+    display:block; border-radius:20px; overflow:hidden;
+    position:relative;
+    background-repeat:no-repeat; background-size:cover;
+
+}
+main #news .right .tab_contents .store a:nth-child(1) {background-image:url(../images/store_01.jpg)}
+main #news .right .tab_contents .store a:nth-child(2) {background-image:url(../images/store_02.jpg)}
+main #news .right .tab_contents .store a:nth-child(3) {background-image:url(../images/store_03.jpg)}
+main #news .right .tab_contents .store a img {width:100%;}
+main #news .right .tab_contents .store a span {
+    position:absolute; top:0; left:0; width:100%; height:100%; padding-top:50%;
+    background:rgba(0,0,0,0.5);
+    color:#ffffff; text-align:center; font-size:1.938rem; letter-spacing:-0.02em; font-weight:500;
 }
 /* hover */
-main #best_menu #best_slide .swiper-wrapper .swiper-slide div .item:hover > a {animation:rotate 0.5s linear alternate infinite; }
-main #best_menu #best_slide .swiper-wrapper .swiper-slide div .item:hover .info h3 a {color:#FDCE02;}
-main #best_menu #best_slide .swiper-wrapper .swiper-slide div .item:hover .info h3 a::after {width:220px;}
-
-
-/* news */
-main #news {
-    padding:100px 0;
+main #news .right .tab_contents .notice ul li a:hover h3 {color:#053291;}
+/* --------------------------------------------------sns--------------------------------------------- */
+main #sns {
+    background:#FFF3BE; padding:100px 30px;
 }
-main #news .left {}
-main #news .left h2 {}
-main #news .left h2 p {}
-main #news .left h2 p img {}
-main #news .right {}
-main #news .right .tap_top {}
-main #news .right .tap_top .tab_title {}
-main #news .right .tap_top .tab_title .tab_btn {}
-main #news .right .tap_top .tab_title .tab_btn a {}
-main #news .right .tap_top .tab_title .active {}
-main #news .right .tap_top .tab_title .active a {}
-main #news .right .tap_top .more {}
-main #news .right .tap_top .more img {}
-main #news .right .tap_top .more span {}
-main #news .right .tap_contents {}
-main #news .right .tap_contents .notice {}
-main #news .right .tap_contents .notice ul {}
-main #news .right .tap_contents .notice ul li {}
-main #news .right .tap_contents .notice ul li a {}
-main #news .right .tap_contents .notice ul li a h3 {}
-main #news .right .tap_contents .notice ul li a p {}
-main #news .right .tap_contents .store {}
-main #news .right .tap_contents .store a {}
-main #news .right .tap_contents .store a img {}
+main #sns .top {display:flex; justify-content:space-between; margin-bottom:50px;}
+main #sns .top h2 {
+    font-family: 'Baloo 2', cursive; color:#053291; font-size:6.25rem;
+}
+main #sns .top a {
+    display:block; background:#FDCE02; width:410px; height:70px; 
+    border-radius:50px;
+    display:flex; justify-content:center; align-items:center;
+    transition:all 0.5s;
+}
+main #sns .top a:hover {
+    background:#053291;
+}
+main #sns .top a img {margin-right:10px; width:30px; height:30px;}
+main #sns .top a span {
+    font-size:1.938rem; letter-spacing:-0.02em; font-weight:500; color:#ffffff;
+}
+main #sns #sns_slide {}
+main #sns #sns_slide .swiper-wrapper {}
+main #sns #sns_slide .swiper-wrapper .swiper-slide {
+}
+main #sns #sns_slide .swiper-wrapper .swiper-slide a {
+    display:block;
+    border-radius:20px; position:relative;
+    overflow:hidden;
+}
+main #sns #sns_slide .swiper-wrapper .swiper-slide a img {width:100%;}
+/* main #sns #sns_slide .swiper-wrapper .slide1 a {background-image:url(../images/sns_con01.jpg)}
+main #sns #sns_slide .swiper-wrapper .slide2 a {background-image:url(../images/sns_con02.jpg)}
+main #sns #sns_slide .swiper-wrapper .slide3 a {background-image:url(../images/sns_con03.jpg)}
+main #sns #sns_slide .swiper-wrapper .slide4 a {background-image:url(../images/sns_con04.jpg)} */
+main #sns #sns_slide .swiper-wrapper .swiper-slide a .sns_con {
+    position:absolute; top:0; left:0; z-index:100; 
+    width:100%; height:100%; 
+    background:rgba(0,0,0,0.5);
+    padding:40px 10px; text-align:center;
+}
+main #sns #sns_slide .swiper-wrapper .swiper-slide a dl dt {
+    color:#ffffff;
+}
+main #sns #sns_slide .swiper-wrapper .swiper-slide a dl dd {
+    color:#ffffff; line-height:20px;
+}
+/* ----------------------bnr --------------------------- */
+main #bnr {
+    padding:70px 0;
+    display:flex; justify-content:space-between;
+}
+main #bnr .with_bnr {
+    width:50%; height:270px;
+    background:url(../images/bnr_with.jpg) no-repeat;
+    background-size:cover; background-position:center;
+    padding:40px 30px;
+}
+main #bnr .with_bnr h2 {
+    font-size:2.378rem; letter-spacing:-0.02em; font-weight:700;
+    color:#053291; margin-bottom:15px;
+}
+main #bnr .with_bnr p {
+    font-size:1.563rem;  letter-spacing:-0.02em; line-height:40px;
+    margin-bottom:10px;
+}
+main #bnr .with_bnr a {
+    display:inline-block; padding:15px 25px; background:#053291;
+    color:#ffffff; border-radius:30px;
+    font-size:1.563rem; letter-spacing:-0.02em; transition:all 0.5s;
+}
+main #bnr .with_bnr a:hover {background:#ffffff; color:#053291; font-weight:700;}
+main #bnr .search_bnr {
+    width:50%; height:270px;
+    background:url(../images/bnr_search.jpg) no-repeat;
+    background-size:cover; background-position:center;
+    padding:40px 30px;
+}
+main #bnr .search_bnr h2 {
+    font-size:2.378rem; letter-spacing:-0.02em; font-weight:700;
+    color:#FDCE02; margin-bottom:15px;
+}
+main #bnr .search_bnr p {
+    font-size:1.563rem; letter-spacing:-0.02em; line-height:40px;
+    color:#ffffff; margin-bottom:10px;
+}
+main #bnr .search_bnr form {}
+main #bnr .search_bnr fieldset {
+    background:#ffffff; overflow:hidden;
+    width:366px; height:54px; border:3px solid #FDCE02; border-radius:10px;
+    display:flex; flex-flow:row nowrap; justify-content:space-between;
+    padding:10px;
+}
+main #bnr .search_bnr fieldset #search {
+    width:90%;
+}
+main #bnr .search_bnr fieldset #search::placeholder {
+    font-size:1.25rem; letter-spacing:-0.02em; color:#d1d1d1;
+}
+main #bnr .search_bnr fieldset #search_btn {
+    background:none;
+    width:10%;
+}
+main #bnr .search_bnr fieldset #search_btn:hover {
+    transform:scale(1.1)
+}
 
 /* key */
 @keyframes txt_move {
