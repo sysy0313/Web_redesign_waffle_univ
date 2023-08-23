@@ -19,4 +19,13 @@ gnb.addEventListener('mouseover', function(){
 // m_nav
 const m_nav = document.querySelector('.m_nav')
 const m_nav_open = document.querySelector('.m_nav_open')
-m_nav_open.style.display = 'none'
+m_nav.addEventListener('click', function(e){
+    e.preventDefault();
+    m_nav_open.classList.toggle('show')
+})
+$('.m_gnb .sub').hide();
+$('.m_gnb > li').mouseover(function(){
+    $(this).find('.sub').stop().slideDown()
+}).mouseout(function(){
+    $(this).find('.sub').stop().slideUp()
+})

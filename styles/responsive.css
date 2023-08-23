@@ -1,9 +1,30 @@
+header, main, footer {min-width:320px;}
 /* 반응형 css header*/
 @media screen and (min-width:1300px){
     .m_nav {display:none !important;}
-    .m_mav_open {display:none !important;}
+    .m_nav_open {display:none;}
 }
 @media screen and (max-width:1300px){
+    header {padding:0 15px;}
     nav #gnb {display:none !important;}
     nav .m_nav {display:block;}
+    footer address span {font-size:1rem; line-height:30px;} 
+    footer address span em {font-size:1rem; line-height:30px;} 
+}
+@media screen and (max-width:1000px){
+    header h1 {width:200px}
+}
+@media screen and (max-width:900px){
+    footer .f_top {
+        display:flex; flex-flow:column nowrap; align-items:center;
+    }
+    footer .f_top p {width:200px; margin-bottom:20px;}
+    footer .f_top .sns_list a {display:inline-block; padding:5px;} 
+    footer address {text-align:center;}
+}
+@media screen and (max-width:700px){
+    header h1 {width:170px}
+}
+@media screen and (max-width:400px){
+    header h1 {width:140px}
 }

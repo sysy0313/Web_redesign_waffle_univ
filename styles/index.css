@@ -28,8 +28,8 @@ main #visual #visual_slide .swiper-wrapper .slide1 .left h2 span {color:#053291;
 main #visual #visual_slide .swiper-wrapper .slide2 .left h2 span {color:#ffffff;}
 main #visual #visual_slide .swiper-wrapper .swiper-slide .left p:first-of-type {margin-bottom:24px;}
 main #visual #visual_slide .swiper-wrapper .swiper-slide .left p:nth-of-type(2) {margin-bottom:60px;}
-
-main #visual #visual_slide .swiper-wrapper .slide2 .left p span {color:#ffffff;}
+main #visual #visual_slide .swiper-wrapper .slide1 .left p span {font-size:1.25rem;}
+main #visual #visual_slide .swiper-wrapper .slide2 .left p span {color:#ffffff; font-size:1.25rem;}
 main #visual #visual_slide .swiper-wrapper .swiper-slide .left a {
     font-family: 'Baloo 2', cursive; font-size:1.25rem; letter-spacing:-0.02em;
 }
@@ -177,7 +177,7 @@ main #news .right .tab_contents .notice ul li a:hover h3 {color:#053291;}
 main #sns {
     background:#FFF3BE; padding:100px 30px;
 }
-main #sns .top {display:flex; justify-content:space-between; margin-bottom:50px;}
+main #sns .top {display:flex; justify-content:space-between; align-items:center; margin-bottom:50px;}
 main #sns .top h2 {
     font-family: 'Baloo 2', cursive; color:#053291; font-size:6.25rem;
 }

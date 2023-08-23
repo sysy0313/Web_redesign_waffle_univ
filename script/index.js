@@ -2,7 +2,7 @@
 // slide01 - visual slide
 const visual_slide = new Swiper('#visual_slide',{
     autoplay:{
-        delay:10000,
+        delay:5000,
         disableOnInteraction:false,//버튼 클릭 후 자동재생유지
     }, //자동재생
     loop:true, //마지막슬라이드->첫슬라이드 자연스럽게
@@ -11,7 +11,7 @@ const visual_slide = new Swiper('#visual_slide',{
 // slide02 - best_slide
 const best_slide = new Swiper('#best_slide',{
     autoplay:{
-        delay:20000,
+        delay:7000,
         disableOnInteraction:false,//버튼 클릭 후 자동재생유지
     }, //자동재생
     loop:true, //마지막슬라이드->첫슬라이드 자연스럽게
@@ -24,14 +24,19 @@ const best_slide = new Swiper('#best_slide',{
 })
 // slide03_sns_slide
 const sns_slide = new Swiper('#sns_slide', {
+    autoplay:{
+        delay:5000,
+        disableOnInteraction:false,//버튼 클릭 후 자동재생유지
+    }, //자동재생
     slidesPerView:4, //breakpoints 옵션 추가 시 'auto' 한번에 보이는 슬라이드 수
     spaceBetween:30,
     loop:true,
-    centeredSlides:true,
+    // centeredSlides:true,
     //swiper-slide 반응형웹 옵션
     breakpoints:{
         //해상도:{옵션:값} 작은값->큰값
-        400:{slidesPerView:2},//400이상일 때
+        280:{slidesPerView:1},
+        500:{slidesPerView:2},//400이상일 때
         // 700:{slidesPerView:2}, //700이상일 때
         900:{slidesPerView:3}, //900이상일 때
         1160:{slidesPerView:4},//1160이상일 경우 슬라이드 4개 표시
