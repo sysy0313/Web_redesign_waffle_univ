@@ -1,6 +1,6 @@
 main {}
 /* --------------------------------------visual----------------------------------- */
-main #visual {margin-top:100px}
+main #visual {}
 main #visual #visual_slide {}
 main #visual #visual_slide .swiper-wrapper {}
 main #visual #visual_slide .swiper-wrapper .swiper-slide {

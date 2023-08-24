@@ -4,8 +4,14 @@ header, main, footer {min-width:320px;}
     .m_nav {display:none !important;}
     .m_nav_open {display:none;}
 }
+/* ----------------------- */
+@media screen and (max-width:1600px){
+    header nav #gnb > li > a {font-size:1.333rem;}
+}
 @media screen and (max-width:1300px){
-    header {padding:0 15px;}
+    header {padding:0 15px; height:80px;}
+    main {margin-top:80px;}
+    header h1 {width:200px;}
     nav #gnb {display:none !important;}
     nav .m_nav {display:block;}
     footer address span {font-size:1rem; line-height:30px;} 
@@ -23,7 +29,10 @@ header, main, footer {min-width:320px;}
     footer address {text-align:center;}
 }
 @media screen and (max-width:700px){
+    header {height:60px;}
+    main {margin-top:60px;}
     header h1 {width:170px}
+    header .m_nav_open {top:50px;}
 }
 @media screen and (max-width:400px){
     header h1 {width:140px}

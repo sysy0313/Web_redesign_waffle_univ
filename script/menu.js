@@ -15,7 +15,7 @@ const best_slide = new Swiper('#best_slide',{
         // 700:{slidesPerView:2}, //700이상일 때
         900:{slidesPerView:3}, //900이상일 때
         1160:{slidesPerView:4},//1160이상일 경우 슬라이드 4개 표시
-        1600:{slidesPerView:5},//1160이상일 경우 슬라이드 4개 표시
+        1600:{slidesPerView:5},//1600이상일 경우 슬라이드 5개 표시
     },
 })
 // tab

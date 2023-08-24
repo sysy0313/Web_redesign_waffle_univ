@@ -1,0 +1,52 @@
+/* store-css */
+main {padding:100px 0;}
+main #store {width:calc(100% - 30px); margin:0 auto;}
+main #store h1 {
+    font-size:2.441rem; letter-spacing:-0.02em;  font-weight:500;
+    color:#053291; text-align:center; margin-bottom:52px;
+}
+main #store .form_bg {
+    width:100%; height:122px; background:#efefef; margin-bottom:70px;
+}
+main #store .form_bg #search_store_frm {
+    height:100%; 
+    
+}
+main #store .form_bg #search_store_frm fieldset {padding-top:31px;
+    display:flex; flex-flow:row nowrap;  justify-content:center;
+}
+main #store .form_bg #search_store_frm fieldset #city_select {
+    width:250px; height:60px; border:none;
+    margin-right:20px; border-radius:5px;
+}
+main #store .form_bg #search_store_frm fieldset #city_select option {}
+main #store .form_bg #search_store_frm fieldset #gu_gun_select {
+    width:250px; height:60px; border:none;
+    margin-right:20px; border-radius:5px;
+}
+main #store .form_bg #search_store_frm fieldset #gu_gun_select option {}
+main #store .form_bg #search_store_frm fieldset .search {
+    display:flex; justify-content:space-between; align-items:center;
+    background:#ffffff; border-radius:5px;
+    width:500px; height:60px; padding:0 15px;
+}
+main #store .form_bg #search_store_frm fieldset .search #search_input {
+    background:none; width:90%;
+}
+main #store .form_bg #search_store_frm fieldset .search #search_btn {background:none;}
+main #store .wrap {
+    display:flex; flex-flow:row nowrap; 
+}
+main #store .wrap .store_list {width:33%;}
+main #store .wrap .store_list .store_address {
+    display:flex; flex-flow:column nowrap; justify-content:center;
+    height:150px; padding:0 15px;
+    border-bottom:1px solid #FDCE02;
+}
+main #store .wrap .store_list .store_address:last-child {border-bottom:none;}
+main #store .wrap .store_list .active {background:#FDCE02;}
+main #store .wrap .store_list .store_address h2 {
+    font-size:1.25rem; letter-spacing:-0.02em; margin-bottom:10px;
+}
+main #store .wrap .store_list .store_address p {font-size:1.25rem; letter-spacing:-0.02em; margin-bottom:10px; line-height:29px;}
+main #store .wrap #map {width:67%; height:600px; background:pink;}

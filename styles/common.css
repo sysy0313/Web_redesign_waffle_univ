@@ -1,11 +1,13 @@
 header {
     position:fixed; top:0; left:0; z-index:500;
     width:100%; background:#ffffff;
-    height:100px; padding:0 30px;
+    height:100px;
+    padding:0 30px;
     display:flex; flex-flow:row nowrap; justify-content:space-between;
     align-items:center;
     filter:drop-shadow(0 2px 5px rgba(0,0,0,0.1))
 }
+main {margin-top:100px;}
 header h1 {width:240px;}
 header h1 a {}
 header h1 a img {width:100%; }
@@ -53,13 +55,14 @@ header .m_nav {
     width:40px; height:30px; margin-left:40px;
     display:flex; flex-flow:column nowrap; justify-content:space-around;
 }
+header .m_nav:hover span:nth-child(2) {transform:translateX(-8px)}
 header .m_nav span {
-    display:block;
+    display:block; transition:all 0.5s;
     width:40px; height:5px; background:#053291; border-radius:5px;
 }
 /* m_nav_open */
 header .m_nav_open {
-    position:absolute; top:100px; left:0;
+    position:absolute; top:80px; left:0;
     width:100%; background:#ffffff; text-align:center;
     /* padding:20px 0 50px; */
     z-index:100;
