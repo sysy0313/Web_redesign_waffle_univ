@@ -1,4 +1,4 @@
-/* index-반응형 */
+/* index-반응형 css */
 @media screen and (max-width:1850px){
     /* nesw - store */
     main #news .right .tab_contents .store a {width:370px; height:370px;}

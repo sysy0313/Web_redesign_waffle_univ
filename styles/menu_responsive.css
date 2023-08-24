@@ -1,0 +1,42 @@
+/* menu 반응형 css */
+@media screen and (max-width:1580px){
+    main #menu_list .tab_container .tab_contents .list {width:calc(100% - 30px); }
+    main #menu_list .tab_container .tab_contents .list a {margin-bottom:50px; margin-right:calc(50% - 900px / 2);}
+    main #menu_list .tab_container .tab_contents .list a:nth-child(4n) {margin-right:calc(50% - 900px / 2);}
+    main #menu_list .tab_container .tab_contents .list a:nth-child(3n) {margin-right:0;}
+}/* 1580 end */
+@media screen and (max-width:960px){
+    /* tab */
+    main #menu_list .tab_container .tab_contents .menu_bnr {
+        padding-right:80px; height:350px; margin-bottom:70px;}
+    /* list */
+    main #menu_list .tab_container .tab_contents .list a {margin-bottom:50px; margin-right:calc(100% - 600px);}
+    main #menu_list .tab_container .tab_contents .list a:nth-child(3n) {margin-right:calc(100% - 600px);}
+    main #menu_list .tab_container .tab_contents .list a:nth-child(2n) {margin-right:0}
+}/* 960 end */
+@media screen and (max-width:750px){
+    main #menu_list .tab_title a {
+        height:80px; border-top-left-radius:40px; border-top-right-radius:40px;
+    }
+    main #menu_list .tab_title a img {width:25px; height:25px; margin-right:7px;}
+    main #menu_list .tab_title a span {font-size:1.25rem; letter-spacing:-0.02em; font-weight:500;}
+}/* 750 end */
+@media screen and (max-width:650px){
+    main #menu_list .tab_container .tab_contents .list a {width:100%;}
+}/* 650 end */
+@media screen and (max-width:600px){
+    main #menu_list .tab_container .tab_contents .menu_bnr {
+        padding-right:15px; height:300px; margin-bottom:60px;
+    }
+}/* 600 end */
+@media screen and (max-width:530px){
+    main #menu_list .tab_container .tab_contents .menu_bnr {height:200px; margin-bottom:50px;}
+    main #menu_list .tab_container .tab_contents .menu_bnr h2 {font-size:5rem;}
+    main #menu_list .tab_container .tab_contents .menu_bnr p {display:none;}
+    main #menu_list .tab_title a {height:70px;}
+    main #menu_list .tab_title a span {font-size:1rem; letter-spacing:-0.04em; font-weight:400;}
+}/* 530 end */
+@media screen and (max-width:430px){
+    main #menu_list .tab_title a {height:50px; border-top-left-radius:25px; border-top-right-radius:25px;}
+    main #menu_list .tab_title a img {display:none;}
+}/* 430 end */

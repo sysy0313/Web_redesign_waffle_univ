@@ -1,0 +1,160 @@
+/* menu_detail css */
+main {overflow:hidden;}
+main #detail {position:relative;}
+main #detail .txt_move {
+    width:100%; height:130px; background-size:cover;
+    background:url(../images/bg_text_gray.png) repeat-x;
+    position:absolute; left:0; z-index:100;
+    animation:txt_move 60s linear infinite;
+}
+main #detail .txt_move:nth-child(1) {top:70px;}
+main #detail .txt_move:nth-child(2) {bottom:70px;}
+/* wrap */
+main #detail #wrap {
+    position:relative; z-index:200;
+    display:flex; flex-flow:row nowrap; justify-content:center;
+    width:calc(100% - 200px); margin:0 auto;
+    padding:120px 0;
+}
+main #detail #wrap .item_img {
+    width:40%;
+    display:flex; justify-content:center; align-items:center;
+}
+main #detail #wrap .item_img img {width:400px; height:400px; animation:rotate 10s linear infinite;}
+main #detail #wrap .info {
+    width:60%;
+}
+main #detail #wrap .info h1 {
+    font-size:2.441rem; letter-spacing:-0.02em; font-weight:500; color:#053291;
+    margin-bottom:25px; 
+}
+main #detail #wrap .info > p {
+    font-size:1.25rem; letter-spacing:-0.02em; line-height:40px; 
+    margin-bottom:30px;
+}
+/* 영양정보 */
+main #detail #wrap .info .nutrition {margin-bottom:30px;}
+main #detail #wrap .info .nutrition .top {
+    width:100%;
+    display:flex; flex-flow:row nowrap; justify-content:space-between; align-items:flex-end;
+    padding:10px 0;
+    border-bottom:1px solid #FDCE02;
+}
+main #detail #wrap .info .nutrition .top h2 {
+    font-size:1.563rem; letter-spacing:-0.02em; font-weight:500; color:#053291;
+}
+main #detail #wrap .info .nutrition .top .view {
+    display:flex;
+}
+main #detail #wrap .info .nutrition .top .view a {
+    padding:10px; border-radius:20px;
+    background:#053291;
+    display:flex; align-items:center; justify-content:space-between;
+    transition:all 0.3s;
+}
+main #detail #wrap .info .nutrition .top .view a:hover {background:#FDCE02;}
+main #detail #wrap .info .nutrition .top .view a:first-child {margin-right:8px;}
+main #detail #wrap .info .nutrition .top .view a span {color:#ffffff; letter-spacing:-0.02em; margin-right:5px;}
+main #detail #wrap .info .nutrition .top .view a img {}
+main #detail #wrap .info .nutrition table {width:100%;}
+main #detail #wrap .info .nutrition table thead {width:100%;}
+main #detail #wrap .info .nutrition table thead tr {border-bottom:1px solid #FDCE02;}
+main #detail #wrap .info .nutrition table thead tr th {
+    width:80px; height:55px; text-align:center;
+    font-weight:500; line-height:23px;
+}
+main #detail #wrap .info .nutrition table thead tr th:last-child {
+    width:150px;
+}
+main #detail #wrap .info .nutrition table tbody {}
+main #detail #wrap .info .nutrition table tbody tr {}
+main #detail #wrap .info .nutrition table tbody tr td {
+    width:80px; height:55px; text-align:center;
+    font-weight:500; line-height:23px;
+}
+main #detail #wrap .info .nutrition table tbody tr td:last-child {width:150px;}
+/* drink */
+main #detail #wrap .info .drink {}
+main #detail #wrap .info .drink h2 {
+    font-size:1.563rem; letter-spacing:-0.02em; font-weight:500; color:#053291;
+    margin-bottom:40px;
+}
+main #detail #wrap .info .drink .drink_3 {}
+main #detail #wrap .info .drink .drink_3 a {
+    display:inline-block; text-align:center;
+    width:180px; height:180px; border-radius:50%; margin-right:10px;
+    transition:all 0.5s;
+}
+main #detail #wrap .info .drink .drink_3 a:last-child {margin-right:0;}
+main #detail #wrap .info .drink .drink_3 a:hover {background:#FDCE02;}
+main #detail #wrap .info .drink .drink_3 a img {height:180px;}
+
+/* 뒤로가기 */
+main #detail #wrap .info .back {
+    display:flex; background:#053291; width:150px; height:40px; border-radius:20px;
+    justify-content:center; align-items:center; position:absolute;
+    bottom:25px; right:0;
+    transition:all 0.3s;
+}
+main #detail #wrap .info .back:hover {background:#FDCE02;}
+main #detail #wrap .info .back img {width:30px; height:30px;}
+main #detail #wrap .info .back span {color:#ffffff; font-size:1.25rem;}
+
+/* 영양정보 pop-up */
+main .view_more {}
+main .view_more .pop {
+    position:fixed; z-index:999;
+    top:0; left:0; width:100%; height:100vh;
+    background:rgba(0,0,0,0.2)
+}
+main .view_more .cream {}
+main .view_more .topping {}
+main .view_more .pop .view_open {
+    position:absolute;
+    top:50%; left:50%; transform:translate(-50% ,-50%); 
+    background:#ffffff; padding:50px 15px; border:10px solid #053291; border-radius:20px;
+}
+main .view_more .pop .view_open table{}
+main .view_more .pop .view_open table thead {
+    border-bottom:1px solid #FDCE02;
+}
+main .view_more .pop .view_open table thead tr {}
+main .view_more .pop .view_open table thead tr th {
+    width:80px; height:80px; font-weight:500; letter-spacing:-0.02em; 
+    text-align:center; line-height:23px; 
+}
+main .view_more .pop .view_open table thead tr th:first-child {width:150px;}
+main .view_more .pop .view_open table thead tr th:last-child {width:150px;}
+main .view_more .pop .view_open table tbody {}
+main .view_more .pop .view_open table tbody tr {}
+main .view_more .pop .view_open table tbody tr th {
+    width:80px; height:30px; font-weight:500; letter-spacing:-0.02em; 
+    text-align:center; line-height:23px;
+}
+main .view_more .pop .view_open table tbody tr td {
+    width:80px; height:30px; letter-spacing:-0.02em; 
+    text-align:center; line-height:23px;}
+main .view_more .pop .view_open table tbody tr td:first-child {width:150px}
+main .view_more .pop .view_open table tbody tr td:last-child {width:150px}
+main .view_more .pop .view_open button {
+    position:absolute; right:25px; bottom:10px;
+    background:#053291; color:#fff;
+    display:flex; align-items:center; 
+    width:70px; height:30px; border-radius:20px;
+    transition:all 0.3s;
+}
+main .view_more .pop .view_open button:hover {background:#FDCE02}
+main .view_more .pop .view_open button img {margin:0 5px 0 5px;}
+main .view_more .pop .view_open button span {}
+
+
+
+/* key */
+@keyframes txt_move {
+    0% {background-position:0;}
+    100% {background-position:3000px 0; }
+}
+@keyframes rotate {
+    0% {transform:rotate(0)}
+    100% {transform:rotate(360deg)}
+}

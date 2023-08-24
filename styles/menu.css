@@ -1,0 +1,114 @@
+/* menu css */
+/* main */
+main {overflow:hidden;}
+/*---------------- best ---------------*/
+main #best {
+    padding:120px 15px;
+}
+main #best h1 {
+    font-family: 'Baloo 2', cursive; text-align:center;
+    font-size:2.441rem; letter-spacing:-0.02em; color:#053291; margin-bottom:60px;
+}
+main #best #best_slide {}
+main #best #best_slide .swiper-wrapper .swiper-slide {text-align:center;}
+main #best #best_slide .swiper-wrapper .swiper-slide a {}
+main #best #best_slide .swiper-wrapper .swiper-slide:hover a img {animation:rotate 0.5s linear alternate infinite;}
+main #best #best_slide .swiper-wrapper .swiper-slide a img {width:80%;}
+main #best #best_slide .swiper-scrollbar {}
+main #best #best_slide .swiper-scrollbar {
+    /* position:absolute 기본 설정 */
+    left:calc(50% + 15px);
+    bottom:0;
+    background:rgba(255,255,255,0.8); width:300px; height:5px;
+    border-radius:0;
+}
+/* --------------menu_list -------------*/
+main #menu_list {}
+main #menu_list > h1 {
+    font-size:2.441rem; letter-spacing:-0.02em; color:#053291; font-weight:500;
+    text-align:center; margin-bottom:80px;
+}
+/*-------------- tab title -----------------*/
+main #menu_list .tab_title {
+    display:flex; flex-flow:row nowrap; justify-content:center;
+}
+main #menu_list .tab_title a {
+    display:flex; flex-flow:row nowrap; align-items:center; justify-content:center;
+    text-align:center;
+    width:240px; height:100px; border-top-left-radius:50px; border-top-right-radius:50px;
+    background:#053291; transition:all 0.3s;
+}
+main #menu_list .tab_title a.active {background:#FDCE02;}
+main #menu_list .tab_title a:hover {background:#d1d1d1;}
+main #menu_list .tab_title a img {width:30px; height:30px; margin-right:10px;}
+main #menu_list .tab_title a span {color:#ffffff; font-size:1.563rem; letter-spacing:-0.02em; font-weight:500;}
+/* -------------- tab container-------------- */
+main #menu_list .tab_container {}
+main #menu_list .tab_container .tab_contents {}
+main #menu_list .tab_container .tab1 {}
+main #menu_list .tab_container .tab2 {}
+main #menu_list .tab_container .tab3 {}
+main #menu_list .tab_container .tab4 {}
+main #menu_list .tab_container .tab_contents {}
+/* ---------------tab_bnr------------ */
+main #menu_list .tab_container .tab_contents .menu_bnr {
+    padding-right:130px;
+    width:100%; height:400px; background-size:cover; background-position:center; background-repeat:no-repeat;
+    display:flex; flex-flow:column nowrap; justify-content:center; align-items:flex-end; text-align:right;
+    margin-bottom:100px;
+}
+main #menu_list .tab_container .tab1 .menu_bnr {background-image:url(../images/bnr_menu.jpg);}
+main #menu_list .tab_container .tab2 .menu_bnr {background-image:url(../images/bnr_menu_waffle.jpg);}
+main #menu_list .tab_container .tab3 .menu_bnr {background-image:url(../images/bnr_menu_coffee.jpg);}
+main #menu_list .tab_container .tab4 .menu_bnr {background-image:url(../images/bnr_menu_juice.jpg);}
+main #menu_list .tab_container .tab_contents .menu_bnr h2 {
+    font-family: 'Baloo 2', cursive; 
+    font-size:6.25rem; letter-spacing:-0.04em; color:#053291; margin-bottom:10px;
+}
+main #menu_list .tab_container .tab_contents .menu_bnr p {
+    font-size:1.25rem; letter-spacing:-0.04em; line-height:40px; font-weight:500;
+}
+/* ------------------list--------------------- */
+main #menu_list .tab_container .tab_contents > h2 {
+    font-size:2.441rem; letter-spacing:-0.02em; font-weight:500; color:#053291; margin-bottom:80px;
+    text-align:center;
+}
+main #menu_list .tab_container .tab_contents .list {
+    width:calc(100% - 60px); margin:0 auto; padding-bottom:100px;
+    display:flex; flex-flow:row wrap;
+}
+main #menu_list .tab_container .tab_contents .list a {
+    display:flex; flex-flow:column nowrap; align-items:center;
+    margin-bottom:70px; margin-right:calc(33.33% - 1200px / 3);
+}
+main #menu_list .tab_container .tab_contents .list a:nth-child(4n) {margin-right:0;}
+main #menu_list .tab_container .tab_contents .list a p {margin-bottom:30px; width:300px; border-radius:50%; text-align:center; transition:all 0.3s;}
+main #menu_list .tab_container .tab_contents .list a p img {height:300px;}
+main #menu_list .tab_container .tab_contents .list a h3 {
+    font-size:1.938rem; letter-spacing:-0.02em; font-weight:500; margin-top:-10px;
+    padding:0 20px; border-radius:20px; transition:all 0.3s;
+}
+/* hover */
+main #menu_list .tab_container .tab_contents .list a:hover p {animation:rotate 0.5s linear alternate infinite;}
+main #menu_list .tab_container .tab_contents .list a:hover h3 {
+    background:#FDCE02;  
+    z-index:10;
+}
+/* ----------------tab2 와플------------------ */
+main #menu_list .tab_container .tab2 .menu_type {
+    display:flex; flex-flow:row nowrap; justify-content:center;
+}
+main #menu_list .tab_container .tab2 .menu_type a {
+    font-size:1.563rem; letter-spacing:-0.02em; font-weight:500; 
+    display:block; padding:20px 50px;
+    margin-bottom:70px;
+
+}
+main #menu_list .tab_container .tab2 .menu_type a.active {
+    border-bottom:2px solid #053291; color:#053291;
+}
+
+@keyframes rotate {
+    0% {transform:rotate(-15deg)}
+    100% {transform:rotate(15deg)}
+}
