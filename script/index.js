@@ -11,9 +11,10 @@ const visual_slide = new Swiper('#visual_slide',{
 // slide02 - best_slide
 const best_slide = new Swiper('#best_slide',{
     autoplay:{
-        delay:7000,
+        delay:6000,
         disableOnInteraction:false,//버튼 클릭 후 자동재생유지
     }, //자동재생
+    speed:2000,
     loop:true, //마지막슬라이드->첫슬라이드 자연스럽게
     direction:'horizontal',
     // effect:'fade', //제자리 자연스러운 변경 슬라이드 효과

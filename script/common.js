@@ -23,9 +23,14 @@ m_nav.addEventListener('click', function(e){
     e.preventDefault();
     m_nav_open.classList.toggle('show')
 })
-$('.m_gnb .sub').hide();
-$('.m_gnb > li').mouseover(function(){
-    $(this).find('.sub').stop().slideDown()
-}).mouseout(function(){
-    $(this).find('.sub').stop().slideUp()
+const m_menu = document.querySelectorAll('.m_gnb > li > a')
+const m_sub = document.querySelectorAll('.m_gnb .sub')
+console.log(m_menu, m_sub)
+for(let i of m_sub){i.style.display = 'none'}
+m_menu.forEach(function(target, index){
+    target.addEventListener('click', function(e){
+        e.preventDefault()
+        for(let i of m_sub){i.style.display = 'none'}
+        m_sub[index].style.display = 'block'
+    })
 })

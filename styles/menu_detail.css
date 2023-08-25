@@ -109,9 +109,16 @@ main .view_more .pop {
 }
 main .view_more .cream {}
 main .view_more .topping {}
-main .view_more .pop .view_open {
-    position:absolute; overflow:scroll; height:50vh;
+main .view_more .pop .pop_wrap {
+    background:rgba(255,0,0,0.5);
+    position:absolute;
+    height:50vh; width:1000px;
     top:50%; left:50%; transform:translate(-50% ,-50%); 
+}
+main .view_more .pop .view_open {
+    position:absolute; overflow:scroll; 
+    top:50%; left:50%; transform:translate(-50% ,-50%); 
+    height:500px; width:1000px;
     background:#ffffff; padding:50px 15px; border:10px solid #053291; border-radius:20px;
 }
 main .view_more .pop .view_open table{}
@@ -138,7 +145,7 @@ main .view_more .pop .view_open table tbody tr td:first-child {width:150px}
 main .view_more .pop .view_open table tbody tr td:last-child {width:150px}
 main .view_more .pop  button {
     position:absolute; 
-    right:10px; top:10px;
+    right:0; bottom:-55px;
     background:#053291; color:#fff;
     display:flex; align-items:center; 
     width:70px; height:30px; border-radius:20px;

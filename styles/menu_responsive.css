@@ -12,6 +12,8 @@
     /* tab */
     main #menu_list .tab_container .tab_contents .menu_bnr {
         padding-right:80px; height:350px; margin-bottom:70px; background-position:20% 50%;}
+    main #menu_list .tab_container .tab_contents .menu_bnr h2 {font-size:5rem;}
+
     /* list */
     main #menu_list .tab_container .tab_contents .list a {margin-bottom:50px; margin-right:calc(100% - 600px);}
     main #menu_list .tab_container .tab_contents .list a:nth-child(3n) {margin-right:calc(100% - 600px);}
@@ -34,10 +36,11 @@
     main #menu_list .tab_container .tab_contents .menu_bnr {
         padding-right:15px; height:300px; margin-bottom:60px;
     }
+    main #menu_list .tab_container .tab_contents .menu_bnr h2 {font-size:4rem;}
 }/* 600 end */
 @media screen and (max-width:530px){
     main #menu_list .tab_container .tab_contents .menu_bnr {height:200px; margin-bottom:50px;}
-    main #menu_list .tab_container .tab_contents .menu_bnr h2 {font-size:5rem;}
+    main #menu_list .tab_container .tab_contents .menu_bnr h2 {font-size:2rem;}
     main #menu_list .tab_container .tab_contents .menu_bnr p {display:none;}
     main #menu_list .tab_title a {height:70px;}
     main #menu_list .tab_title a span {font-size:1rem; letter-spacing:-0.04em; font-weight:400;}

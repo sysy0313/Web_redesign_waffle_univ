@@ -69,22 +69,20 @@ header .m_nav_open {
     height:0; overflow:hidden;
     transition:all 1s;
 }
-.show {height:600px !important; padding:20px 0; }
+.show {height:100vh !important; padding:20px 0; }
 header .m_nav_open .m_gnb {}
 header .m_nav_open .m_gnb > li {margin-bottom:20px}
 header .m_nav_open .m_gnb > li:last-child {margin-bottom:0;}
 header .m_nav_open .m_gnb > li > a {
     display:block; height:50px; line-height:50px;
     font-size:1.563rem; letter-spacing:-0.02em; font-weight:500;
-}
-header .m_nav_open .m_gnb > li:hover {
     border-bottom:1px dashed #FDCE02;
 }
 header .m_nav_open .m_gnb > li:hover > a {color:#053291;}
-header .m_nav_open .m_gnb > li > .sub {
-    padding:20px 0;}
-header .m_nav_open .m_gnb > li > .sub li {margin-bottom:35px; }
-header .m_nav_open .m_gnb > li > .sub li:last-child {margin-bottom:0;}
+/* m_nav_sub */
+header .m_nav_open .m_gnb > li > .sub {padding:30px 0 10px;}
+header .m_nav_open .m_gnb > li > .sub li {margin-bottom:20px; }
+/* header .m_nav_open .m_gnb > li > .sub li:last-child {margin-bottom:0;} */
 header .m_nav_open .m_gnb > li > .sub li a {
     display:block; font-size:1.25rem; letter-spacing:-0.02em; 
     color:#555555;

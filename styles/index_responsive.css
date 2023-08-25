@@ -2,6 +2,8 @@
 @media screen and (max-width:1850px){
     /* nesw - store */
     main #news .right .tab_contents .store a {width:370px; height:370px;}
+    /* sns */
+    main #sns #sns_slide .swiper-wrapper .swiper-slide a dl dd {line-height:30px;}
 }/* 1850 end */
 @media screen and (max-width:1700px){
     /* nesw - store */
@@ -22,6 +24,8 @@
     main #best_menu #best_slide .swiper-wrapper .swiper-slide .item .info h3 a {
         font-size:1.5rem; 
     }
+    /* ---------------sns---------------- */
+    main #sns #sns_slide .swiper-wrapper .swiper-slide a dl dd {line-height:25px;}
 }/* 1600 end */
 @media screen and (max-width:1500px){
     /* -----------best_menu-------------------- */
@@ -33,6 +37,9 @@
     /* nesw - store */
     main #news .right .tab_contents .store a {width:280px; height:280px;}
 }/* 1500 end */
+@media screen and (max-width:1400px) {
+    main #sns #sns_slide .swiper-wrapper .swiper-slide a dl dd {line-height:20px;}
+}/* 1400 end */
 @media screen and (max-width:1300px) {
     /* -------------visual------- */
     main #visual #visual_slide .swiper-wrapper .swiper-slide .left {padding-left:15px;}
@@ -88,6 +95,9 @@
     /* -----------sns--------------- */
     main #sns .top h2 {font-size:5rem;}
 }/* 1110 end */
+@media screen and (max-width:1000px) {
+    main #sns #sns_slide .swiper-wrapper .swiper-slide a dl dd {font-size:0.85rem; line-height:16px;}
+}/* 1000 end */
 @media screen and (max-width:900px){
     /* -----------bnr----------------- */
     main #bnr .with_bnr {padding:30px 15px; height:200px;}
@@ -105,7 +115,9 @@
         padding:5px;
     }
     main #bnr .search_bnr fieldset #search::placeholder {font-size:1rem;}
-}
+    /* ------------sns-------------- */
+    main #sns #sns_slide .swiper-wrapper .swiper-slide a dl dd {font-size:1rem; line-height:30px;}
+}/* 900 end */
 @media screen and (max-width:1050px){
     /* nesw - store */
     main #news .right .tab_contents .store a {width:170px; height:170px;}
@@ -132,6 +144,7 @@
     }
     main #sns .top a img {width:20px; height:20px;}
     main #sns .top a span {font-size:1.2rem;}
+    main #sns #sns_slide .swiper-wrapper .swiper-slide a dl dd {line-height:18px;}
 }/* 800 end */
 @media screen and (max-width:700px) {
     main #visual #visual_slide .swiper-wrapper .swiper-slide .left h2 {margin-bottom:50px;}
@@ -151,7 +164,7 @@
         display:flex; flex-flow:column nowrap;
     }
     main #bnr .with_bnr, main #bnr .search_bnr {width:100%;}
-
+    main #sns #sns_slide .swiper-wrapper .swiper-slide a dl dd {font-size:0.8rem;}
 }/* 700end */
 @media screen and (max-width:600px) {
     /* nesw - store */
@@ -180,9 +193,12 @@
     main #news .right .tab_top .more span {font-size:1rem;}
     /* ------------news store------------ */
     main #news .right .tab_contents .store {flex-flow:column nowrap;}
-    main #news .right .tab_contents .store a {width:100%; height:300px; margin-bottom:20px; background-position:center;}
+    main #news .right .tab_contents .store a {width:100%; height:300px; margin-bottom:20px; background-position:top; }
     main #news .right .tab_contents .store a span {line-height:300px; padding:0;}
 }/* 550 end */
+@media screen and (max-width:500px){
+    main #sns #sns_slide .swiper-wrapper .swiper-slide a dl dd {font-size:1rem; line-height:35px;}
+}
 @media screen and (max-width:450px){
     /* --------------visual-------------- */
     main #visual #visual_slide .swiper-wrapper .swiper-slide .left {padding-left:15px;}

@@ -1,0 +1,107 @@
+main {}
+main {margin-top:0;}
+main #wrap .section:nth-child(1) {
+    background-image:url(../images/brandstory_bg1.jpg);
+    background-position:center; 
+    background-size:cover;
+}
+main #wrap .section:nth-child(2) {}
+main #wrap .section:nth-child(3) {}
+main #wrap .section:nth-child(4) {}
+/* section1 */
+main #wrap .section1 {}
+main #wrap .section1 h1 {
+    font-family: 'Baloo 2', cursive; text-align:center;
+    font-size:2.441rem; letter-spacing:-0.02em; color:#053291;
+    margin-bottom:55px; padding-top:300px;
+}
+main #wrap .section1 p {
+    font-size:1.5rem; letter-spacing:-0.02em; line-height:60px; color:#ffffff;
+    text-align:center;
+}
+/* section2 */
+main #wrap .section2 {position:relative; }
+main #wrap .section2 .top {
+    display:flex; flex-flow:row nowrap; justify-content:center; align-items:center;
+    padding:120px 120px 0;
+}
+main #wrap .section2 .top .left {width:60%; height:100%;}
+main #wrap .section2 .top .left h1 {
+    font-family: 'Baloo 2', cursive;
+    font-size:2.441rem; letter-spacing:-0.02em; color:#053291;
+    margin-bottom:40px; padding-top:100px;
+}
+main #wrap .section2 .top .left p {
+    font-size:1.953rem; letter-spacing:-0.02em; line-height:45px;
+}
+main #wrap .section2 .top .right {
+    width:40%; display:flex; justify-content:flex-end;
+}
+main #wrap .section2 .top .right .img_box {
+    background:url(../images/brandstory.jpg); 
+    background-size:cover; background-position:center;
+    border-radius:10px; position:relative; bottom:-45px;
+    width:80%; height:300px; 
+}
+main #wrap .section2 .top .right .img {}
+main #wrap .section2 .btm {
+    background:#efefef; text-align:center; padding:124px 0;
+    position:absolute; width:100%; bottom:0;
+}
+main #wrap .section2 .btm p {
+    font-size:1.25rem; letter-spacing:-0.02em; line-height:40px;
+}
+/* section3 */
+main #wrap .section3 {}
+main #wrap .section3 .history_bg {background:#FDCE02; height:100vh; position:relative;}
+main #wrap .section3 .history_bg .history {
+    background:#ffffff; position:absolute; bottom:0; left:50%; transform:translateX(-50%);
+    width:85%; height:calc(100vh - 200px); 
+    border-top-left-radius:80px; border-top-right-radius:80px;
+    
+}
+main #wrap .section3 .history_bg .history .title {display:flex; flex-flow:column nowrap; align-items:center;}
+main #wrap .section3 .history_bg .history .title .logo {width:150px; height:150px;}
+main #wrap .section3 .history_bg .history .title .logo img {width:100%;}
+main #wrap .section3 .history_bg .history .title h1 {
+    font-family: 'Baloo 2', cursive;
+    font-size:2.441rem; letter-spacing:-0.02em; color:#053291;
+    margin-bottom:40px;
+}
+main #wrap .section3 .history_bg .history .history_list {}
+main #wrap .section3 .history_bg .history .history_list li {}
+/* section4 */
+main #wrap .section4 {}
+main #wrap .section4 .history_bg {
+    background:#FDCE02; height:100vh;
+    position:relative;
+}
+main #wrap .section4 .history_bg .history {
+    background:#ffffff; position:absolute; top:0; left:50%; transform:translateX(-50%);
+    width:85%; height:calc(100vh - 100px); 
+    border-bottom-left-radius:80px; border-bottom-right-radius:80px;
+    padding-top:150px;
+}
+
+/* 공통 */
+main #wrap .section .history_bg .history .history_list {width:80%; margin:0 auto;}
+main #wrap .section .history_bg .history .history_list li {
+    display:flex; flex-flow:row nowrap; justify-content:center;
+    border-bottom:1px solid #FDCE02; margin-bottom:30px;
+}
+main #wrap .section .history_bg .history .history_list li .year {
+    width:30%; text-align:center;
+    font-family: 'Baloo 2', cursive;
+    font-size:7.5rem; letter-spacing:-0.02em; color:#053291;
+}
+main #wrap .section .history_bg .history .history_list li dl {
+    width:70%;
+}
+main #wrap .section .history_bg .history .history_list li dl dt {
+    font-size:2.441rem; letter-spacing:-0.02em; font-weight:500; color:#053291;
+    margin-bottom:20px;
+}
+main #wrap .section .history_bg .history .history_list li dl dd {
+    font-size:1.25rem; letter-spacing:-0.02em; font-weight:500;
+    margin-bottom:20px;
+}

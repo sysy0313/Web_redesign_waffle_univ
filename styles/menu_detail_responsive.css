@@ -1,5 +1,6 @@
 /* menu_detail 반응형 css */
 @media screen and (max-width:1600px){
+    main .view_more .pop .pop_wrap {width:800px;}
     main .view_more .pop .view_open {width:800px;}
 }/* 1600 end */
 @media screen and (max-width:1400px){
@@ -32,11 +33,13 @@
     }
     main #detail #wrap .item_img {width:100%; margin-bottom:30px;}
     main #detail #wrap .info {width:100%;}
+    main .view_more .pop .pop_wrap {width:600px;}
     main .view_more .pop .view_open {width:600px;}
 }/* 800 end */
 @media screen and (max-width:650px){
     main #detail #wrap .info .nutrition table th {font-size:0.8rem;}
     main #detail #wrap .info .nutrition table td {font-size:0.8rem;}
+    main .view_more .pop .pop_wrap {width:500px;}
     main .view_more .pop .view_open {width:500px;}
 }/* 650 end */
 @media screen and (max-width:500px){
@@ -46,11 +49,13 @@
     main #detail #wrap .info .back {width:100px; height:30px;}
     main #detail #wrap .info .back img {width:20px; height:20px;}
     main #detail #wrap .info .back span {font-size:1rem}
+    main .view_more .pop .pop_wrap {width:400px;}
     main .view_more .pop .view_open {width:400px;}
 }/* 500 end */
 @media screen and (max-width:430px){
     main #detail #wrap .info .drink .drink_3 a {width:100px; height:100px; margin-right:5px;}
     main #detail #wrap .info .drink .drink_3 a img {height:100px;}
+    main .view_more .pop .pop_wrap {width:300px;}
     main .view_more .pop .view_open {width:300px }
     main .view_more .pop .view_open table th {font-size:0.5rem; letter-spacing:-0.04em;}
     main .view_more .pop .view_open table td {font-size:0.5rem; letter-spacing:-0.04em;}

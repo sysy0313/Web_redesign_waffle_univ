@@ -1,4 +1,4 @@
-/* store-css */
+/* store 매장위치 -css */
 main {padding:100px 0;}
 main #store {width:calc(100% - 30px); margin:0 auto;}
 main #store h1 {
@@ -10,7 +10,6 @@ main #store .form_bg {
 }
 main #store .form_bg #search_store_frm {
     height:100%; 
-    
 }
 main #store .form_bg #search_store_frm fieldset {padding-top:31px;
     display:flex; flex-flow:row nowrap;  justify-content:center;
@@ -42,11 +41,13 @@ main #store .wrap .store_list .store_address {
     display:flex; flex-flow:column nowrap; justify-content:center;
     height:150px; padding:0 15px;
     border-bottom:1px solid #FDCE02;
+    transition:all 0.3s;
 }
+main #store .wrap .store_list .store_address:hover {background:#FDCE02;}
 main #store .wrap .store_list .store_address:last-child {border-bottom:none;}
 main #store .wrap .store_list .active {background:#FDCE02;}
 main #store .wrap .store_list .store_address h2 {
     font-size:1.25rem; letter-spacing:-0.02em; margin-bottom:10px;
 }
 main #store .wrap .store_list .store_address p {font-size:1.25rem; letter-spacing:-0.02em; margin-bottom:10px; line-height:29px;}
-main #store .wrap #map {width:67%; height:600px; background:pink;}
+main #store .wrap #map {width:67%; height:600px; background:lightgray;}

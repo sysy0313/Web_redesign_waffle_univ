@@ -5,16 +5,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>전국 캠퍼스 현황 | 와플대학</title>
     <!-- favicon -->
-    <link rel="shortcut icon" href="#" type="image/x-icon">
-    <link rel="icon" href="#" type="image/x-icon">     
+    <link rel="shortcut icon" href="./images/favicon.png" type="image/x-icon">
+    <link rel="icon" href="./images/favicon.png" type="image/x-icon">     
     <!-- style -->
     <link rel="stylesheet" href="./styles/reset.css">
     <link rel="stylesheet" href="./styles/common.css">
     <link rel="stylesheet" href="./styles/responsive.css">
     <link rel="stylesheet" href="./styles/store.css">
+    <link rel="stylesheet" href="./styles/store._responsive.css">
 </head>
 <body>
-    <!-- <header></header> -->
+    <!-- header -->
+    <?php include ("./header.php")?>
     <main>
         <section id="store">
             <h1>전국 캠퍼스 현황</h1>
@@ -40,7 +42,7 @@
                             <option value="gyeongsangbukdo">경상북도</option>
                             <option value="gyeongsangnamdo">경상남도</option>
                             <option value="jejudo">제주도</option>
-                            <option value="sejongsi">세종시특별자치시</option>
+                            <option value="sejongsi">세종시</option>
                         </select>
                         <select name="gu_gun" id="gu_gun_select">
                             <option value="" disabled selected>구/군</option>
@@ -80,9 +82,10 @@
             </div>
         </section>
     </main>
-    <!-- <footer></footer> -->
+    <!-- footer -->
+    <?php include ("./footer.php")?>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
-    <!-- <script src="./script/common.js"></script> -->
+    <script src="./script/common.js"></script>
     <!-- 카카오 지도를 사용하기 위한 js 앱 키 준비 -->
     <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=bd78be12a801b257109bf9c27140a7e1"></script>
     <script>

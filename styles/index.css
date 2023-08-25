@@ -112,7 +112,7 @@ main #news .left {width:30%;}
 main #news .left h2 {
     font-family: 'Baloo 2', cursive; color:#053291; font-size:6.25rem; letter-spacing:-0.02em;
 }
-main #news .left p {position:absolute; left:-20px; bottom:70px;}
+main #news .left p {position:absolute; left:-20px; bottom:50px;}
 main #news .left p img {}
 main #news .right {width:70%;}
 main #news .right .tab_top {
@@ -161,6 +161,7 @@ main #news .right .tab_contents .store a {
     display:block; border-radius:20px; overflow:hidden;
     position:relative;
     background-repeat:no-repeat; background-size:cover;
+    background-position:center;
 
 }
 main #news .right .tab_contents .store a:nth-child(1) {background-image:url(../images/store_01.jpg)}
@@ -218,9 +219,7 @@ main #sns #sns_slide .swiper-wrapper .swiper-slide a .sns_con {
 main #sns #sns_slide .swiper-wrapper .swiper-slide a dl dt {
     color:#ffffff;
 }
-main #sns #sns_slide .swiper-wrapper .swiper-slide a dl dd {
-    color:#ffffff; line-height:20px;
-}
+main #sns #sns_slide .swiper-wrapper .swiper-slide a dl dd {color:#ffffff; line-height:35px;}
 /* ----------------------bnr --------------------------- */
 main #bnr {
     padding:70px 0;
