@@ -22,15 +22,14 @@
                 <li>
                     <a href="./store.html">캠퍼스 안내</a>
                     <ul class="sub">
-                        <li><a href="#">창업성공스토리</a></li>
-                        <li><a href="#">신규 캠퍼스</a></li>
+                        <li><a href="./store.html">신규 캠퍼스</a></li>
                         <li><a href="./store.html">전국 캠퍼스 현황</a></li>
                     </ul>
                 </li>
                 <li>
                     <a href="#">창업 안내</a>
                     <ul class="sub">
-                        <li><a href="#">창업 경쟁력</a></li>
+                        <li><a href="#">창업성공스토리</a></li>
                         <li><a href="#">창업절차 및 비용</a></li>
                         <li><a href="#">창업상담</a></li>
                         <li><a href="#">자주 묻는 질문</a></li>
@@ -71,15 +70,14 @@
             <li>
                 <a href="#">캠퍼스 안내</a>
                 <ul class="sub">
-                    <li><a href="#">창업성공스토리</a></li>
-                    <li><a href="#">신규 캠퍼스</a></li>
+                    <li><a href="./store.html">신규 캠퍼스</a></li>
                     <li><a href="./store.html">전국 캠퍼스 현황</a></li>
                 </ul>
             </li>
             <li>
                 <a href="#">창업 안내</a>
                 <ul class="sub">
-                    <li><a href="#">창업 경쟁력</a></li>
+                    <li><a href="#">창업성공스토리</a></li>
                     <li><a href="#">창업절차 및 비용</a></li>
                     <li><a href="#">창업상담</a></li>
                     <li><a href="#">자주 묻는 질문</a></li>
